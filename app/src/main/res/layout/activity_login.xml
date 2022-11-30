@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo_jak"
+            android:contentDescription="@string/logo_jak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textFontWeight="700"
+            android:textStyle="bold"
+            android:text="@string/login" />
+
+        <LinearLayout
+            android:id="@+id/logingoogle"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:background="@drawable/custom_btn_logingoogle"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_google"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:text="Masuk dengan Google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/custom_textfield"
+            android:hint="Masuk dengan email atau ponsel"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/custom_textfield"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="12dp"
+            android:textFontWeight="700"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Forgot your Password"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/custom_btn_login"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/white"
+            android:text="Login"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
